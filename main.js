@@ -1,1 +1,1 @@
-console.log("aardappel"),console.log("test"),console.log("another test bby");
+(()=>{"use strict";console.log("Home Directory!"),console.log("Menu Directory!"),console.log("Contact Directory!")})();

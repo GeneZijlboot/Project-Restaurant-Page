@@ -4,8 +4,8 @@ export function Menu(){
     const Content = document.querySelector('#Content');
     const Menu = document.createElement('div');
     const TaskBarMenu = document.createElement('div');
-    const Home = document.createElement('button');
-    const Contact = document.createElement('button');
+    const HomeBtn = document.createElement('button');
+    const ContactBtn = document.createElement('button');
     const List = document.createElement('div');
     const emptyleft = document.createElement('div');
     const emptyright = document.createElement('div');
@@ -39,8 +39,8 @@ export function Menu(){
 
     Menu.id = 'Menu';
     TaskBarMenu.id = 'TaskBarMenu';
-    Home.id = 'Buttons';
-    Contact.id = 'Buttons';
+    HomeBtn.id = 'Buttons';
+    ContactBtn.id = 'Buttons';
     List.id = 'List';
     emptyleft.id = 'emptyleft';
     center.id = 'center';
@@ -72,8 +72,8 @@ export function Menu(){
     FoodText6.id = 'FoodText';
 
 
-    Home.textContent = 'Home';
-    Contact.textContent = 'Contact';
+    HomeBtn.textContent = 'Home';
+    ContactBtn.textContent = 'Contact';
     copyright.textContent = 'Copyright © Gene Zijlmans';
 
     FoodText1.textContent = 'Baklava';
@@ -93,8 +93,8 @@ export function Menu(){
 
     Content.appendChild(Menu);
     Menu.appendChild(TaskBarMenu);
-    TaskBarMenu.appendChild(Home);
-    TaskBarMenu.appendChild(Contact);
+    TaskBarMenu.appendChild(HomeBtn);
+    TaskBarMenu.appendChild(ContactBtn);
     Menu.appendChild(List);
     List.appendChild(emptyleft);
     List.appendChild(center);
@@ -126,12 +126,12 @@ export function Menu(){
     MenuItem6.appendChild(img6);
     MenuItem6.appendChild(FoodText6);
 
-    Contact.addEventListener('click', () => {
+    ContactBtn.addEventListener('click', () => {
         Content.removeChild(Menu);
         Contact();
     })
 
-    Home.addEventListener('click', () => {
+    HomeBtn.addEventListener('click', () => {
         Content.removeChild(Menu);
         Website();
     })

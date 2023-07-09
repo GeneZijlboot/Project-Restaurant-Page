@@ -159,3 +159,37 @@ a:hover{
     margin-top: 20px;
     font-size: 30px;
 }
+/*Contact*/
+
+#information{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#MapImg{
+    border-radius: 20px;
+    height: 350px;
+    width: 500px;
+}
+
+#Left{
+    display: grid;
+    text-align: center;
+    margin-right: 50px;
+    gap:35px;
+}
+
+#Adress, #Hours, #Contact{
+    font-size: 25px;
+}
+
+#MadeByContact, a{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}

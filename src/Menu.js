@@ -133,6 +133,6 @@ export function Menu(){
 
     Contact.addEventListener('click', () => {
         Content.removeChild(Menu);
-        Website();
+        Contact();
     })
 }

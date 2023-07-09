@@ -18,6 +18,8 @@ export function Website(){
     const Parmigiano = document.createElement('p');
     const txt = document.createElement('p');
     const OrderBtn = document.createElement('button');
+    const MadeBy = document.createElement('div');
+    const Copyright = document.createElement('a');
     MainPage.id = 'MainPage';
     Delicious.id = 'Delicious';
     Delicious.textContent = 'Delicious';
@@ -40,6 +42,8 @@ export function Website(){
     RightSide.id = 'RightSide';
     LeftSide.id = 'LeftSide';
     Img.src = './images/Food.png';
+    Copyright.textContent = 'Copyright © Gene Zijlmans';
+    Copyright.href = 'https://github.com/GeneZijlboot/Project-Restaurant-Page';
     Content.appendChild(MainPage);
     MainPage.appendChild(LeftSide);
     MainPage.appendChild(RightSide);
@@ -53,6 +57,8 @@ export function Website(){
     MainText.appendChild(Parmigiano);
     MainText.appendChild(txt);
     MainText.appendChild(OrderBtn);
+    MainText.appendChild(MadeBy);
+    MadeBy.appendChild(Copyright);
 
     //adding EventListener for the buttons
     HomeBtn.addEventListener('click', () => {

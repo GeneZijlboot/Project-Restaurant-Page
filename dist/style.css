@@ -70,6 +70,7 @@ p{
 
 #OrderBtn{
     margin-top: 80px;
+    margin-bottom: 80px;
     height: 60px;
     width: 170px;
     text-align: center;
@@ -88,4 +89,16 @@ p{
 #Buttons:active, #OrderBtn:active{
     transform: scale(0.98);
     /* Scaling button to 0.98 to its original size */
+}
+
+#MadeBy, a{
+    margin-top: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color:#6b8250;
 }

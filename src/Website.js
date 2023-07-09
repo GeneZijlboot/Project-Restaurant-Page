@@ -5,6 +5,7 @@ import { Contact } from "./Contact";
 export function Website(){
     //contents of main page
     const Content = document.querySelector('#Content');
+    const MainPage = document.createElement('div');
     const LeftSide = document.createElement('div');
     const Img = document.createElement('img');
     const RightSide = document.createElement('div');
@@ -17,6 +18,7 @@ export function Website(){
     const Parmigiano = document.createElement('p');
     const txt = document.createElement('p');
     const OrderBtn = document.createElement('button');
+    MainPage.id = 'MainPage';
     Delicious.id = 'Delicious';
     Delicious.textContent = 'Delicious';
     Parmigiano.id = 'Parmigiano';
@@ -38,8 +40,9 @@ export function Website(){
     RightSide.id = 'RightSide';
     LeftSide.id = 'LeftSide';
     Img.src = './images/Food.png';
-    Content.appendChild(LeftSide);
-    Content.appendChild(RightSide);
+    Content.appendChild(MainPage);
+    MainPage.appendChild(LeftSide);
+    MainPage.appendChild(RightSide);
     LeftSide.appendChild(Img);
     RightSide.appendChild(TaskBar);
     RightSide.appendChild(MainText);
@@ -50,11 +53,25 @@ export function Website(){
     MainText.appendChild(Parmigiano);
     MainText.appendChild(txt);
     MainText.appendChild(OrderBtn);
-    /*
-    Home();
-    Menu();
-    Contact();
 
-    addEventListener('click', Home) //hierin staat de dommanipulation voor Home
-    */
+    //adding EventListener for the buttons
+    HomeBtn.addEventListener('click', () => {
+        Content.removeChild(MainPage);
+        Home();
+    })
+
+    MenuBtn.addEventListener('click', () => {
+        Content.removeChild(MainPage);
+        Menu();
+    })
+
+    ContactBtn.addEventListener('click', () => {
+        Content.removeChild(MainPage);
+        Contact();
+    })
+
+    OrderBtn.addEventListener('click', () => {
+        Content.removeChild(MainPage);
+        Menu();
+    })
 }

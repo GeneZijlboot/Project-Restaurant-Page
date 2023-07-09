@@ -1,3 +1,4 @@
 export function Menu(){
-    console.log('Menu Directory!');
+    console.log('Order btns workings');
+    console.log('Menu btns workings');
 }

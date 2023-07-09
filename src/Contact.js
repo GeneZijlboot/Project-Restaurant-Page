@@ -1,3 +1,3 @@
 export function Contact(){
-    console.log('Contact Directory!');
+    console.log('Contact btns workings');
 }

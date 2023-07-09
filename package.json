@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": { "YourScriptName": "git subtree push --prefix dist origin gh-pages" },
-
+  "scripts": { 
+    "YourScriptName": "git subtree push --prefix dist origin gh-pages",
+    "deploy": "gh-pages --dist 'dist' --branch 'release'"
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {

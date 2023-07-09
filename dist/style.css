@@ -15,13 +15,14 @@ body{
 }
 /*img styling and placement*/
 
-img{
+#img{
     height: 550px;
     width: 550px;
     border-radius: 50%;
     border: 5px solid #6b8250;
     margin-top: 15%;
 }
+
 /*text*/
 #MainText{
     margin-top: 70px;
@@ -101,4 +102,60 @@ p{
 
 a:hover{
     color:#6b8250;
+}
+
+/*menu*/
+#TaskBarMenu{
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    margin-top: 25px;
+}
+
+#List{
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+    margin-top: 80px;
+}
+
+#center{
+    display: grid;
+    gap: 100px;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+#MenuItem{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    height: 300px;
+    color:white;
+}
+
+#MadeByMenu, a{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+#MenuImg{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: 5px solid #6b8250;
+}
+
+#MenuImg:hover{
+    border-color: white;
+    cursor: pointer;
+}
+
+#FoodText{
+    margin-top: 20px;
+    font-size: 30px;
 }

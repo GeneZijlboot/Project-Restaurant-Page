@@ -42,6 +42,7 @@ export function Website(){
     RightSide.id = 'RightSide';
     LeftSide.id = 'LeftSide';
     Img.src = './images/Food.png';
+    Img.id = 'img';
     Copyright.textContent = 'Copyright © Gene Zijlmans';
     Copyright.href = 'https://github.com/GeneZijlboot/Project-Restaurant-Page';
     Content.appendChild(MainPage);
@@ -61,11 +62,6 @@ export function Website(){
     MadeBy.appendChild(Copyright);
 
     //adding EventListener for the buttons
-    HomeBtn.addEventListener('click', () => {
-        Content.removeChild(MainPage);
-        Home();
-    })
-
     MenuBtn.addEventListener('click', () => {
         Content.removeChild(MainPage);
         Menu();

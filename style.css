@@ -1,0 +1,195 @@
+body{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: #272526;
+}
+
+#MainPage{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+}
+
+#RightSide{
+    display: grid;
+    
+}
+/*img styling and placement*/
+
+#img{
+    height: 550px;
+    width: 550px;
+    border-radius: 50%;
+    border: 5px solid #6b8250;
+    margin-top: 15%;
+}
+
+/*text*/
+#MainText{
+    margin-top: 70px;
+    direction: rtl;
+}
+
+#txt{
+    font-size: 18px;
+    margin-top: 25px;
+}
+p{
+    margin: 0px;
+    padding: 0px;
+    color:white;
+}
+
+#Delicious{
+    font-size: 80px;
+    color:white;
+}
+
+#Parmigiano{
+    font-size: 140px;
+    color:#6b8250;
+}
+
+/*buttons*/
+
+#TaskBar{
+    margin-top: 5px;
+    display: flex;
+    gap: 100px;
+}
+
+#Buttons{
+    height: 80px;
+    width: 200px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    background-color: #6b8250;
+    border-radius: 45px;
+    border: 1px solid #6b8250;
+    cursor: pointer;
+}
+
+#OrderBtn{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    height: 60px;
+    width: 170px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    background-color: #6b8250;
+    border-radius: 45px;
+    border: 1px solid #6b8250;
+    cursor: pointer;
+}
+
+#Buttons:hover, #OrderBtn:hover{
+    background-color: #506538;
+}
+
+#Buttons:active, #OrderBtn:active{
+    transform: scale(0.98);
+    /* Scaling button to 0.98 to its original size */
+}
+
+#MadeBy, a{
+    margin-top: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color:#6b8250;
+}
+
+/*menu*/
+#TaskBarMenu{
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    margin-top: 25px;
+}
+
+#List{
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+    margin-top: 80px;
+}
+
+#center{
+    display: grid;
+    gap: 100px;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+#MenuItem{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    height: 300px;
+    color:white;
+}
+
+#MadeByMenu, a{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+#MenuImg{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: 5px solid #6b8250;
+}
+
+#MenuImg:hover{
+    border-color: white;
+    cursor: pointer;
+}
+
+#FoodText{
+    margin-top: 20px;
+    font-size: 30px;
+}
+/*Contact*/
+
+#information{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#MapImg{
+    border-radius: 20px;
+    height: 350px;
+    width: 500px;
+}
+
+#Left{
+    display: grid;
+    text-align: center;
+    margin-right: 50px;
+    gap:35px;
+}
+
+#Adress, #Hours, #Contact{
+    font-size: 25px;
+}
+
+#MadeByContact, a{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}

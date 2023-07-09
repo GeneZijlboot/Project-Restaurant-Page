@@ -1,5 +1,5 @@
+import { Contact } from "./Contact";
 import { Website } from "./Website";
-
 export function Menu(){
     const Content = document.querySelector('#Content');
     const Menu = document.createElement('div');
@@ -126,13 +126,13 @@ export function Menu(){
     MenuItem6.appendChild(img6);
     MenuItem6.appendChild(FoodText6);
 
-    Home.addEventListener('click', () => {
-        Content.removeChild(Menu);
-        Website();
-    })
-
     Contact.addEventListener('click', () => {
         Content.removeChild(Menu);
         Contact();
+    })
+
+    Home.addEventListener('click', () => {
+        Content.removeChild(Menu);
+        Website();
     })
 }
